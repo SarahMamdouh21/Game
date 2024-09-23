@@ -1,0 +1,268 @@
+*{
+    transition: all .4s !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+	background-color: #141114;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #09c; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4B70F5; 
+	height: 50px;
+    border-radius: 10px;
+}
+
+
+
+body{
+    background-image:linear-gradient(to right, rgba(0,0,0,.5) 50%,rgba(0,0,0,.5) 100%),url('../images/fantasy-group-adventurers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Ga Maamli", sans-serif;
+}
+@media (max-width: 1200px) {
+    body{
+        background-position-x: 48%;
+    }
+}
+a{
+    color: inherit !important;
+    transition: all .3s !important;
+	font-family: "Playwrite GB S", cursive !important;
+	font-size: 18px !important;
+	cursor: pointer;
+
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: "Ga Maamli", sans-serif !important;
+	font-weight: bold;
+}
+/* Start Home Page Style */
+
+.navbar-brand{
+    color: #fff !important;
+}
+.nav-item .nav-link{
+    color: #fff !important;
+    font-family: "Ga Maamli", sans-serif !important;
+}
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+   color: #09c !important;
+   transition: color 0.5s;
+}
+nav {
+    background-color: rgb(13, 1, 1) !important;
+ 
+    margin-inline: auto;
+    margin-top: -30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+ }
+.game-info{
+    transition: transform .5s, filter .3s 0.1s;
+    filter: grayscale(50%);
+    box-shadow: 0 0 3px 3px #fff;
+	height: 500px;
+    cursor: pointer;
+}
+.game-info:hover{
+    filter: grayscale(0);
+    transform: scale(1.05);
+}
+.overlay{
+	background-color: #131013;
+	background-size: 50px 50px;
+	background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+	left: 0;
+	opacity: 1;
+	transition: all .8s;
+}
+.game-info:hover .overlay{
+	left: -100%;
+	opacity: 0;
+}
+.overlay-content h1{
+	background-size: cover;
+	color: #BEFFF7;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 30px;
+	text-shadow: 0 0 0.6rem #4B70F5, 0 0 1.5rem #96C9F4,
+    -0.2rem 0.1rem 1rem #96C9F4, 0.2rem 0.1rem 1rem #96C9F4,
+    0 -0.5rem 2rem #3FA2F6, 0 0.5rem 3rem #3FA2F6;
+	
+}
+
+.text{
+	box-shadow: inset 0 0 5px 5px #fff;
+	background-color: rgba(0,0,0,.5);
+}
+.desc{
+	font-family: "Nerko One", cursive !important;
+	font-style: italic;
+	font-weight: 100;
+	font-size: 18px;
+    text-shadow: 0 0 0.6rem #9EDDFF, 0 0 1.5rem #221e20,
+		-0.2rem 0.1rem 1rem #3b3b3b, 0.2rem 0.1rem 1rem #3b3438,
+		0 -0.5rem 2rem #574f53, 0 0.5rem 3rem #2c2c2c;
+    color: #BEFFF7;   
+    border: 2px solid #9EDDFF; 
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.main{
+   margin-top: 80px;
+}
+
+
+#back-to-top {
+    display: none; 
+    position: fixed; 
+    bottom: 30px; 
+    right: 30px;
+    width: 40px; 
+    height: 40px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #000; 
+    color: #fff; 
+    cursor: pointer; 
+    padding: 10px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+}
+
+#back-to-top:hover {
+    background-color: #09c; 
+}
+/* End Home Page Style */
+
+/* Start Details style */
+
+.head h1{
+    letter-spacing: 1.5px;
+}
+.head i{
+    cursor: pointer;
+}
+.head i:hover{
+	color: #09c;
+}
+.image-Details{
+	box-shadow: 0 0 5px 5px #444444;
+}
+h5 span{
+	font-family: "Nerko One", cursive !important;
+	font-style: italic;
+	font-weight: 100;
+	font-size: 18px;
+	letter-spacing: 2px;
+	color: #09c;
+}
+
+.show-game{
+    background-color: transparent;
+    position: relative;
+    outline: none;
+    border: 2px solid #09c;
+    border-radius: 10px;
+    width: 150px;
+    height: 60px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fff;
+    transition: .5s;
+    transition-delay: 0s;
+}
+.show-game:hover{
+    transition-delay: 1.5s;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 0 10px #09c,
+                0 0 20px #09c,
+                0 0 40px #09c,
+                0 0 80px #09c,
+                0 0 100px #09c;
+}
+.show-game a{
+    position: relative;
+    z-index: 100;
+	text-decoration: none;
+	font-size: 14px !important;
+
+}
+
+.description{
+    font-size: 14px;
+}
+
+.loading{
+    background-color: rgba(0,0,0,.9);
+}
+.loader {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #FFF #FFF transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent #FF3D00 #FF3D00;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+}
+.loader::before {
+    width: 40px;
+    height: 40px;
+    border-color: #FFF #FFF transparent transparent;
+    animation: rotation 1.5s linear infinite;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+@keyframes rotationBack {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+
+
